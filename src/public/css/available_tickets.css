@@ -1,0 +1,38 @@
+    .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h2{
+        text-align: center;
+        /* background-image: 
+            linear-gradient(90deg, red, purple);
+        background-clip: initial; */
+        /* color: transparent; */
+    }
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* overflow: hidden; */
+    }
+    .container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        top: 0;
+    }
+    .tickets{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 15px ;
+    }
+    .tickets > li{
+        background: #afa8ff;
+        padding: 8px 0;
+        border-radius: 5px;
+        list-style: none;
+    }

@@ -1,0 +1,23 @@
+.select-zone{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: 'center';
+    flex-direction: column;
+    padding: 20px;
+}
+.select-zone > select , .select-zone > input{
+    width: 50%;
+    margin: 10px 0;
+    padding: 5px 0;
+    font-size: larger;
+    border-radius: 9px;
+    background: none;
+    outline: none;
+}
+.select-zone > select:focus {
+    background: rgb(252, 188, 51);
+}
+h2{
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+<head>
+    <link rel="stylesheet" href="/css/book_ticket.css"></link>
+</head>
+
+<%# Here we are going to say hello to our users %>
+<!-- <h2> hello<%= username %></h2> -->
+
+<h2>Book a ticket</h2>
+<form class="select-zone" action="book-ticket" method="post" >
+    <input type="text" name="ticket_owner"
+     id="" placeholder="Ticket owner" 
+     required>
+
+    <select name="from_destination" id="" required>
+        <option value="Buea">Buea</option>
+        <option value="Bamenda">Bamenda</option>
+        <option value="Douala">Douala</option>
+        <option value="Yaounde">Yaounde</option>
+        <option value="Bafousam">Bafousam</option>
+    </select>
+    <select name="to_destination" id="" required>
+        <option value="Bafousam">Bafousam</option>
+        <option value="Yaounde">Yaounde</option>
+        <option value="Douala">Douala</option>
+        <option value="Bamenda">Bamenda</option>
+        <option value="Buea">Buea</option>
+    </select>
+
+    <input type="number" name="passenger_numb" 
+    id="" placeholder="Number of passengers" 
+    pattern="" required>
+    
+    <!-- <sel-ect name="confort" id="">
+        <option value="Normal">Normal</option>
+        <option value="First-class">First-class</option>
+        <option value="VIP">VIP</option>
+        <option value="Legendary">Legendary</option>
+    </select> -->
+    <input type="date" name="departure_date" id="" required>
+    <!-- Used to automatically update the price while the user inputs information -->
+    <div class="price"></div>
+
+    <button type="submit" style="padding: 10px; background: aqua;"> Let's ride </button>
+</form>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/sign_up.css">
+    <link rel="shortcut icon" href="../public/images/" type="image/png">
+</head>
+<body>
+   <section id="welcome">
+    <p id="explore">Explore Your Dream</p>
+    <p id="destination">DESTINATION</p>
+    <img src="/images/DreamTRIPlogo.png" alt="the logo">
+   </section> 
+   <section id="sign-form">
+    <form action="/register" method="post">
+        <div class="semail">
+            <label for="First name">User name</label>
+            <br>
+            <input type="text" name="username"
+             required placeholder="Enter your full name" id="firstname">
+            <br><br>
+        </div>
+        <!-- <div>
+            <label for="email">Your email</label>
+            <br>
+            <input type="email" name="email" required placeholder="Enter your email" id="email">
+            <br><br>
+        </div> -->
+        <div>
+            <label for="phone number">Phone number</label>
+            <br>
+            <input type="number" name="phone_number" required 
+            placeholder="Enter phone number" id="mobile">
+            <br><br>
+        </div>
+        <div>
+            <label for="IDcard Number">IDcard number</label>
+            <br>
+            <input type="text" name="id_number" required 
+            placeholder="Enter your IDcard number" id="idcard">
+            <br><br>
+        </div>
+        <div>
+            <label for="Password">Password</label>
+            <br>
+            <input type="Password" name="psword" required
+             placeholder="Enter your password" id="password">
+            <br><br>
+        </div>
+        <button id="sign-up" type="submit">Sign up NOW</button>
+        <br><br>
+        <p>Already have an account? 
+            <a href="/login">Login
+            </a>
+        </p>
+    </form>
+   </section>
+</body>
+</html>
+
+<!-- the crazi code I used for the last sign-up -->
+<!-- <form action="register" method="post">
+    <input type="text" name="username" placeholder="Enter your name" required>
+    <input type="number" name="phnNumb" placeholder="Enter your phone number" required>
+    <input type="password" name="psword" placeholder="Enter your password" required>
+    <input type="number" name="idNumb" placeholder="Enter your id number" required>
+    
+    <button type="submit">Let's ride</button>
+</form> -->

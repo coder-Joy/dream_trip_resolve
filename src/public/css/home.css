@@ -1,0 +1,294 @@
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    background: #ff9900;
+}
+nav>.left>img{
+    width: 130px;
+    height: 100px;
+}
+nav>.right{
+    width: 48%;
+}
+nav>.right>ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+nav>.right>ul>li{
+    list-style: none;
+}
+nav>.right>ul>li>a{
+    text-decoration: none;
+    color: black;
+} 
+nav>.right>ul>li>a:active{
+    color: greenyellow;
+}
+
+.travels-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 50px;
+}
+.travels{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 50%;
+    box-shadow: 7px 8px 10px 6px #232432;
+    margin-top: 10px;
+    padding: 10px;
+}
+.travels>.ways{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.select-info>.passenger-numb, .select-info > .date{
+    display: flex;
+    flex-direction: column;
+}
+
+.select-info>.passenger-numb > input, .select-info > .date > input{
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.together > .from-to > .from > img{
+    width: 40px;
+    height: 40px;
+}
+
+.together > .from-to > .to > img{
+    width: 40px;
+    height: 40px;
+}
+.together{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.from-to{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+.buses > h2{
+    text-align: center;
+}
+.card-zone{
+    display: grid;
+    grid-auto-flow: row dense;
+    gap: 10px;
+    grid-template: repeat(1, 1fr) / repeat(3 , 1fr);
+    justify-items: center;
+    margin-bottom: 25px;
+}
+.card-zone>.card{
+    width: 80%;
+    height: 90%;
+    box-shadow: 10px 5px 8px #234af4;
+    padding: 1px 3px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items:center;
+    height: fit-content;
+}
+
+.card-zone > .card > .card-container {
+    width: 100%;
+    height: 10%;
+}
+.card-zone>.card>.card-container-text>.card-text{
+        overflow-wrap: break-word;
+}
+.card-zone> .card> .card-image > img{
+    width: 100%;
+    height: 100%;
+}
+.reviews{
+    width: 100vw;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.reviews > .review-card{
+    position: relative;
+    width: 40%;
+    height: 150px;        
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.reviews > .review-card > img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: -20%;
+    border-radius: 50%;
+}
+.reviews > .review-card > .review-text > p{
+    text-align: center;
+}
+
+/* Now the intro section with the image */
+.intro{
+    width: 100vw;
+    padding: 0 0 0 18px;
+    margin: 0 0 25px 0;
+}
+aside{
+    width: 40%;
+}
+aside>p{
+    font-family: sans;
+    overflow-wrap: break-word;
+}
+
+/* Now the slideshow  */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Now working with the footer */
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 100%;
+}
+.fa-facebook{
+    background: rgb(27, 99, 255);
+    color: white;
+}
+.fa-whatsapp{
+    background: rgb(33, 255, 33);
+    color: white;
+}
+.fa-instagram{
+    background: rgb(175, 5, 175);
+    color: white;
+}
+.fa-linkedin{
+    border: 1px solid blue;
+}
+footer{
+    margin-top: 50px;
+    border-top: 1px solid blue;
+    padding: 25px 0;
+    background: #ff9900;
+}
+.sites{
+    display: grid;
+    grid-auto-flow: row dense;
+    justify-items: center;
+    gap: 10px;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);        
+}
+
+/* Working with small screen sizes */
+@media only screen and (max-width: 420px){
+    .card-zone{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-zone> .card{
+        width: 60%;
+        padding: 2px 5px;
+        margin: 3px 0;
+    }
+    /* Working with the introductory section */
+    .intro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    aside{
+        width: 60%;
+    }
+    .intro > aside > h2 {
+        text-align: center;
+    }
+
+    /* Working with the image text*/
+    .text {font-size: 11px}
+
+    footer > .sites{
+        grid-template: repeat(2, auto)/ repeat(2, auto);
+        align-items: self-end;
+        justify-content: space-evenly;
+    }
+}
